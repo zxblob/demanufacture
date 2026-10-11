@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "tag": "c:ingots/brass"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "R": {
+      "item": "minecraft:repeater"
+    },
+    "P": {
+      "item": "create:potato_cannon"
+    },
+    "M": {
+      "item": "irons_artifice:mechanical_components"
+    }
+  },
+  "pattern": [
+    "BHB",
+    "RPM",
+    " B "
+  ],
+  "result": {
+    "id": "artifice_cannons:potato_cannon",
+    "count": 1
+  }
+}

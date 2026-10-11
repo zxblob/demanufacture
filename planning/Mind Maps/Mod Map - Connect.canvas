@@ -1,0 +1,1180 @@
+{
+ "nodes": [
+  {
+   "id": "center",
+   "type": "text",
+   "x": -310,
+   "y": -260,
+   "width": 620,
+   "height": 520,
+   "text": "# New'O'Nautics\n## Mod Map - Connect\n\n**Red arrow** = a new connection we could build.\n\nOnly mods that have at least one arrow in this map are shown. `Mod Map.canvas` has every mod.\n\nColoured branches = category -> mod.\n\nEdges are suggestions; edit freely.\n\nSee [[Pack Scan - Compat Features]], [[Electricity Audit]]."
+  },
+  {
+   "id": "hub_food",
+   "type": "text",
+   "x": 1025,
+   "y": 3072,
+   "width": 340,
+   "height": 120,
+   "text": "# Food & Drink",
+   "color": "2"
+  },
+  {
+   "id": "fd",
+   "type": "text",
+   "x": 2132,
+   "y": 3566,
+   "width": 300,
+   "height": 148,
+   "text": "**Farmer's Delight**\nCooking pot, skillet, cutting board, stove, crops, baskets. The base most food mods build on."
+  },
+  {
+   "id": "kc",
+   "type": "text",
+   "x": 1474,
+   "y": 1680,
+   "width": 300,
+   "height": 174,
+   "text": "**Kaleidoscope Cookery**\nChinese-style cooking: wok, stockpot, steamer, millstone, stove. Has its own dish Quality (Superb→Poor) and Recipe records."
+  },
+  {
+   "id": "kc_tavern",
+   "type": "text",
+   "x": 1911,
+   "y": 2754,
+   "width": 300,
+   "height": 148,
+   "text": "**KC Tavern**\nWine barrels with 6 brew levels, pressing tub, cocktail shaker, bar furniture."
+  },
+  {
+   "id": "bnc",
+   "type": "text",
+   "x": 1391,
+   "y": 2728,
+   "width": 300,
+   "height": 122,
+   "text": "**Brewin' & Chewin'**\nFermenting Keg for drinks, cheese wheels, fondue, quiche."
+  },
+  {
+   "id": "dd",
+   "type": "text",
+   "x": 428,
+   "y": 3106,
+   "width": 300,
+   "height": 122,
+   "text": "**Display Delight**\nTurns ~400 FD/KC/other dishes into placeable plated food blocks."
+  },
+  {
+   "id": "cck",
+   "type": "text",
+   "x": 1677,
+   "y": 3137,
+   "width": 300,
+   "height": 148,
+   "text": "**Create: Central Kitchen**\nCreate automation for FD/KC: arms, deployers, funnels, packagers feed cooking blocks."
+  },
+  {
+   "id": "hub_econ",
+   "type": "text",
+   "x": -144,
+   "y": 2044,
+   "width": 340,
+   "height": 120,
+   "text": "# Economy & Trade",
+   "color": "3"
+  },
+  {
+   "id": "numis",
+   "type": "text",
+   "x": 74,
+   "y": 1599,
+   "width": 300,
+   "height": 148,
+   "text": "**Create Numismatics**\nCoin currency, bank accounts and terminals, depositors, vendors (player shops)."
+  },
+  {
+   "id": "deliver",
+   "type": "text",
+   "x": 318,
+   "y": 2535,
+   "width": 300,
+   "height": 174,
+   "text": "**Delivery Required**\nContractor delivery contracts, Market, P2P terminal; currency rewards; has a 'Crew Food Crate' contract."
+  },
+  {
+   "id": "floor",
+   "type": "text",
+   "x": 444,
+   "y": 2121,
+   "width": 300,
+   "height": 122,
+   "text": "**Trading Floor**\nAutomate villager trading with a Trading Depot."
+  },
+  {
+   "id": "tradeworks",
+   "type": "text",
+   "x": -690,
+   "y": 2057,
+   "width": 300,
+   "height": 122,
+   "text": "**Tradeworks**\nShelves and table cloths for displaying goods."
+  },
+  {
+   "id": "hub_player",
+   "type": "text",
+   "x": -1064,
+   "y": 699,
+   "width": 340,
+   "height": 120,
+   "text": "# Player, World & Mobs",
+   "color": "2"
+  },
+  {
+   "id": "hub_qol",
+   "type": "text",
+   "x": -421,
+   "y": 516,
+   "width": 340,
+   "height": 120,
+   "text": "# Client, Performance & Libraries (not individually mapped)",
+   "color": "5"
+  },
+  {
+   "id": "ui",
+   "type": "text",
+   "x": -459,
+   "y": 962,
+   "width": 420,
+   "height": 226,
+   "text": "**UI, info & maps**\nJEI, Distraction Free Recipes, Jade, AppleSkin, Xaero minimap/world map, Controlling, Mouse Tweaks, Searchables, Crash Assistant, Chat Heads, Emojiful, Freecam, Ok Zoomer, WorldEdit, Essential (+Patcher, Tweaks), Sable Jade, Create Addon Organizer, NetherPortalFix."
+  },
+  {
+   "id": "hub_decor",
+   "type": "text",
+   "x": -408,
+   "y": -604,
+   "width": 340,
+   "height": 120,
+   "text": "# Building, Decor & Dyes",
+   "color": "5"
+  },
+  {
+   "id": "dyedepot",
+   "type": "text",
+   "x": 240,
+   "y": -847,
+   "width": 300,
+   "height": 122,
+   "text": "**Dye Depot + Dye The World**\n16 new dyes and a huge range of dyed blocks, items and banners."
+  },
+  {
+   "id": "dyebridge",
+   "type": "text",
+   "x": -351,
+   "y": -954,
+   "width": 300,
+   "height": 122,
+   "text": "**Dye bridges**\nDye Depot Aeroworks, CEE Dye Depot: coloured modules and motors."
+  },
+  {
+   "id": "hub_create",
+   "type": "text",
+   "x": 1113,
+   "y": -1530,
+   "width": 340,
+   "height": 120,
+   "text": "# Create Core & Logistics",
+   "color": "5"
+  },
+  {
+   "id": "create",
+   "type": "text",
+   "x": 1792,
+   "y": -1693,
+   "width": 300,
+   "height": 174,
+   "text": "**Create 6.0**\nKinetic machines, fluids, trains, packages, vaults, and the mixing/pressing/crushing recipe types. The hub of the pack."
+  },
+  {
+   "id": "mobpkg",
+   "type": "text",
+   "x": 1069,
+   "y": -518,
+   "width": 300,
+   "height": 122,
+   "text": "**Mobile Packages**\nRobo Bee delivery drones, portable stock ticker and packager."
+  },
+  {
+   "id": "dragons",
+   "type": "text",
+   "x": 531,
+   "y": -1534,
+   "width": 300,
+   "height": 122,
+   "text": "**Dragons Plus**\nLibrary/addon: dye buckets, freezing and 'ending' recipes."
+  },
+  {
+   "id": "hub_aero",
+   "type": "text",
+   "x": 1768,
+   "y": -1277,
+   "width": 340,
+   "height": 120,
+   "text": "# Aeronautics, Sable & Vehicles",
+   "color": "3"
+  },
+  {
+   "id": "sable",
+   "type": "text",
+   "x": 2167,
+   "y": 840,
+   "width": 300,
+   "height": 148,
+   "text": "**Sable**\nPhysics-driven moving block structures (sub-levels). Core of the ship/vehicle side."
+  },
+  {
+   "id": "propulsion",
+   "type": "text",
+   "x": 3665,
+   "y": -1767,
+   "width": 300,
+   "height": 122,
+   "text": "**Create Propulsion**\nThrusters, ion engines, fuel tanks, FE cables, wings."
+  },
+  {
+   "id": "kinlift",
+   "type": "text",
+   "x": 2720,
+   "y": -1256,
+   "width": 300,
+   "height": 122,
+   "text": "**Kinetic Lift**\nTurbofan jets that burn kerosene, control seat."
+  },
+  {
+   "id": "hoseconn",
+   "type": "text",
+   "x": 2540,
+   "y": -1756,
+   "width": 300,
+   "height": 148,
+   "text": "**Sable Hose Connectors**\nHose, item, wire and chain connectors between ships and the world."
+  },
+  {
+   "id": "seats",
+   "type": "text",
+   "x": 1624,
+   "y": -213,
+   "width": 300,
+   "height": 122,
+   "text": "**Furniture Seats**\nSit on furniture on Create / Sable contraptions."
+  },
+  {
+   "id": "hub_industry",
+   "type": "text",
+   "x": 2831,
+   "y": -41,
+   "width": 340,
+   "height": 120,
+   "text": "# Industry, Energy & Fluids",
+   "color": "6"
+  },
+  {
+   "id": "tfmg",
+   "type": "text",
+   "x": 2599,
+   "y": -903,
+   "width": 300,
+   "height": 148,
+   "text": "**The Factory Must Grow (TFMG)**\nSteel, oil refining, chemical vat, engines, own electricity. Two jars installed."
+  },
+  {
+   "id": "cdg",
+   "type": "text",
+   "x": 5771,
+   "y": 233,
+   "width": 300,
+   "height": 148,
+   "text": "**Diesel Generators**\nCrude oil, distillation, plant oil, biodiesel, diesel engines, concrete."
+  },
+  {
+   "id": "petrochem",
+   "type": "text",
+   "x": 3486,
+   "y": -833,
+   "width": 300,
+   "height": 148,
+   "text": "**Petrochem**\nFull refinery chain: desalting, cracking, electrolyzer, turbine, kerosene, asphalt."
+  },
+  {
+   "id": "petrodep",
+   "type": "text",
+   "x": 2942,
+   "y": -532,
+   "width": 300,
+   "height": 122,
+   "text": "**Petro Deposits**\nPetroleum deposits, scanner and gauge for Petrochem."
+  },
+  {
+   "id": "liquidfuel",
+   "type": "text",
+   "x": 2244,
+   "y": -271,
+   "width": 300,
+   "height": 122,
+   "text": "**Create Liquid Fuel**\nPipe liquid fuel into Blaze Burners."
+  },
+  {
+   "id": "ca",
+   "type": "text",
+   "x": 4013,
+   "y": -719,
+   "width": 300,
+   "height": 122,
+   "text": "**Crafts & Additions**\nKinetic ↔ FE: alternator, motor, wires, accumulator, tesla coil."
+  },
+  {
+   "id": "pg",
+   "type": "text",
+   "x": 2384,
+   "y": 305,
+   "width": 300,
+   "height": 148,
+   "text": "**Power Grid**\nSimulated electricity: transformers, FE inverter, solar tiles, punch cards."
+  },
+  {
+   "id": "ee",
+   "type": "text",
+   "x": 2950,
+   "y": 353,
+   "width": 300,
+   "height": 148,
+   "text": "**Electro Energetics**\nRealistic electricity: panels, breakers, resistors, converter to FE."
+  },
+  {
+   "id": "hub_compute",
+   "type": "text",
+   "x": 516,
+   "y": 527,
+   "width": 340,
+   "height": 120,
+   "text": "# Computing, Logic & Scripting",
+   "color": "2"
+  },
+  {
+   "id": "cc",
+   "type": "text",
+   "x": 604,
+   "y": 1039,
+   "width": 300,
+   "height": 122,
+   "text": "**CC: Tweaked** (2 jars)\nProgrammable computers, turtles, monitors, modems."
+  },
+  {
+   "id": "kubejs",
+   "type": "text",
+   "x": 1137,
+   "y": 1103,
+   "width": 300,
+   "height": 174,
+   "text": "**KubeJS ecosystem**\nKubeJS, KubeJS Create, Additions, Rarity, ProbeJS, PonderJS, LootJS, TFMGJS, KubeJSDelight, KubeJSable, KJSC Auto."
+  },
+  {
+   "id": "hub_guns",
+   "type": "text",
+   "text": "# Guns & Combat",
+   "color": "3",
+   "x": -994,
+   "y": -828,
+   "width": 340,
+   "height": 120
+  },
+  {
+   "id": "bpixel",
+   "type": "text",
+   "text": "**Backpack Pixel**\nCreate-style backpack with function packs, tanks, arms. Worn packs live in player data (3 slots), not the inventory.",
+   "x": -1379,
+   "y": 290,
+   "width": 300,
+   "height": 174
+  },
+  {
+   "id": "irons",
+   "type": "text",
+   "text": "**Iron's Arms 'n Artifice**\nHistorical-fantasy firearms: flintlock, blunderbuss, modular parts and modifiers. Needs Iron's Lib; MT Artifice Hand Fix patches first-person hands.",
+   "x": -254,
+   "y": -2430,
+   "width": 300,
+   "height": 200
+  },
+  {
+   "id": "yagm",
+   "type": "text",
+   "text": "**Yet Another Gravestone Mod**\nGravestones that hold your items on death. Has an API for Curios / Accessories style compat.",
+   "x": -1645,
+   "y": 700,
+   "width": 300,
+   "height": 148
+  }
+ ],
+ "edges": [
+  {
+   "id": "c_food",
+   "fromNode": "center",
+   "fromSide": "bottom",
+   "toNode": "hub_food",
+   "toSide": "top",
+   "color": "2"
+  },
+  {
+   "id": "t_fd",
+   "fromNode": "hub_food",
+   "fromSide": "bottom",
+   "toNode": "fd",
+   "toSide": "top",
+   "color": "2"
+  },
+  {
+   "id": "t_kc",
+   "fromNode": "hub_food",
+   "fromSide": "top",
+   "toNode": "kc",
+   "toSide": "bottom",
+   "color": "2"
+  },
+  {
+   "id": "t_kc_tavern",
+   "fromNode": "hub_food",
+   "fromSide": "right",
+   "toNode": "kc_tavern",
+   "toSide": "left",
+   "color": "2"
+  },
+  {
+   "id": "t_bnc",
+   "fromNode": "hub_food",
+   "fromSide": "top",
+   "toNode": "bnc",
+   "toSide": "bottom",
+   "color": "2"
+  },
+  {
+   "id": "t_dd",
+   "fromNode": "hub_food",
+   "fromSide": "left",
+   "toNode": "dd",
+   "toSide": "right",
+   "color": "2"
+  },
+  {
+   "id": "t_cck",
+   "fromNode": "hub_food",
+   "fromSide": "right",
+   "toNode": "cck",
+   "toSide": "left",
+   "color": "2"
+  },
+  {
+   "id": "c_econ",
+   "fromNode": "center",
+   "fromSide": "bottom",
+   "toNode": "hub_econ",
+   "toSide": "top",
+   "color": "3"
+  },
+  {
+   "id": "t_numis",
+   "fromNode": "hub_econ",
+   "fromSide": "top",
+   "toNode": "numis",
+   "toSide": "bottom",
+   "color": "3"
+  },
+  {
+   "id": "t_deliver",
+   "fromNode": "hub_econ",
+   "fromSide": "bottom",
+   "toNode": "deliver",
+   "toSide": "top",
+   "color": "3"
+  },
+  {
+   "id": "t_floor",
+   "fromNode": "hub_econ",
+   "fromSide": "right",
+   "toNode": "floor",
+   "toSide": "left",
+   "color": "3"
+  },
+  {
+   "id": "t_tradeworks",
+   "fromNode": "hub_econ",
+   "fromSide": "left",
+   "toNode": "tradeworks",
+   "toSide": "right",
+   "color": "3"
+  },
+  {
+   "id": "c_player",
+   "fromNode": "center",
+   "fromSide": "bottom",
+   "toNode": "hub_player",
+   "toSide": "top",
+   "color": "2"
+  },
+  {
+   "id": "c_qol",
+   "fromNode": "center",
+   "fromSide": "bottom",
+   "toNode": "hub_qol",
+   "toSide": "top",
+   "color": "5"
+  },
+  {
+   "id": "t_ui",
+   "fromNode": "hub_qol",
+   "fromSide": "bottom",
+   "toNode": "ui",
+   "toSide": "top",
+   "color": "5"
+  },
+  {
+   "id": "c_decor",
+   "fromNode": "center",
+   "fromSide": "top",
+   "toNode": "hub_decor",
+   "toSide": "bottom",
+   "color": "5"
+  },
+  {
+   "id": "t_dyedepot",
+   "fromNode": "hub_decor",
+   "fromSide": "top",
+   "toNode": "dyedepot",
+   "toSide": "bottom",
+   "color": "5"
+  },
+  {
+   "id": "t_dyebridge",
+   "fromNode": "hub_decor",
+   "fromSide": "top",
+   "toNode": "dyebridge",
+   "toSide": "bottom",
+   "color": "5"
+  },
+  {
+   "id": "c_create",
+   "fromNode": "center",
+   "fromSide": "top",
+   "toNode": "hub_create",
+   "toSide": "bottom",
+   "color": "5"
+  },
+  {
+   "id": "t_create",
+   "fromNode": "hub_create",
+   "fromSide": "right",
+   "toNode": "create",
+   "toSide": "left",
+   "color": "5"
+  },
+  {
+   "id": "t_mobpkg",
+   "fromNode": "hub_create",
+   "fromSide": "bottom",
+   "toNode": "mobpkg",
+   "toSide": "top",
+   "color": "5"
+  },
+  {
+   "id": "t_dragons",
+   "fromNode": "hub_create",
+   "fromSide": "left",
+   "toNode": "dragons",
+   "toSide": "right",
+   "color": "5"
+  },
+  {
+   "id": "c_aero",
+   "fromNode": "center",
+   "fromSide": "right",
+   "toNode": "hub_aero",
+   "toSide": "left",
+   "color": "3"
+  },
+  {
+   "id": "t_sable",
+   "fromNode": "hub_aero",
+   "fromSide": "bottom",
+   "toNode": "sable",
+   "toSide": "top",
+   "color": "3"
+  },
+  {
+   "id": "t_propulsion",
+   "fromNode": "hub_aero",
+   "fromSide": "right",
+   "toNode": "propulsion",
+   "toSide": "left",
+   "color": "3"
+  },
+  {
+   "id": "t_kinlift",
+   "fromNode": "hub_aero",
+   "fromSide": "right",
+   "toNode": "kinlift",
+   "toSide": "left",
+   "color": "3"
+  },
+  {
+   "id": "t_hoseconn",
+   "fromNode": "hub_aero",
+   "fromSide": "top",
+   "toNode": "hoseconn",
+   "toSide": "bottom",
+   "color": "3"
+  },
+  {
+   "id": "t_seats",
+   "fromNode": "hub_aero",
+   "fromSide": "bottom",
+   "toNode": "seats",
+   "toSide": "top",
+   "color": "3"
+  },
+  {
+   "id": "c_industry",
+   "fromNode": "center",
+   "fromSide": "right",
+   "toNode": "hub_industry",
+   "toSide": "left",
+   "color": "6"
+  },
+  {
+   "id": "t_tfmg",
+   "fromNode": "hub_industry",
+   "fromSide": "top",
+   "toNode": "tfmg",
+   "toSide": "bottom",
+   "color": "6"
+  },
+  {
+   "id": "t_cdg",
+   "fromNode": "hub_industry",
+   "fromSide": "right",
+   "toNode": "cdg",
+   "toSide": "left",
+   "color": "6"
+  },
+  {
+   "id": "t_petrochem",
+   "fromNode": "hub_industry",
+   "fromSide": "top",
+   "toNode": "petrochem",
+   "toSide": "bottom",
+   "color": "6"
+  },
+  {
+   "id": "t_petrodep",
+   "fromNode": "hub_industry",
+   "fromSide": "top",
+   "toNode": "petrodep",
+   "toSide": "bottom",
+   "color": "6"
+  },
+  {
+   "id": "t_liquidfuel",
+   "fromNode": "hub_industry",
+   "fromSide": "left",
+   "toNode": "liquidfuel",
+   "toSide": "right",
+   "color": "6"
+  },
+  {
+   "id": "t_ca",
+   "fromNode": "hub_industry",
+   "fromSide": "top",
+   "toNode": "ca",
+   "toSide": "bottom",
+   "color": "6"
+  },
+  {
+   "id": "t_pg",
+   "fromNode": "hub_industry",
+   "fromSide": "bottom",
+   "toNode": "pg",
+   "toSide": "top",
+   "color": "6"
+  },
+  {
+   "id": "t_ee",
+   "fromNode": "hub_industry",
+   "fromSide": "bottom",
+   "toNode": "ee",
+   "toSide": "top",
+   "color": "6"
+  },
+  {
+   "id": "c_compute",
+   "fromNode": "center",
+   "fromSide": "bottom",
+   "toNode": "hub_compute",
+   "toSide": "top",
+   "color": "2"
+  },
+  {
+   "id": "t_cc",
+   "fromNode": "hub_compute",
+   "fromSide": "bottom",
+   "toNode": "cc",
+   "toSide": "top",
+   "color": "2"
+  },
+  {
+   "id": "t_kubejs",
+   "fromNode": "hub_compute",
+   "fromSide": "bottom",
+   "toNode": "kubejs",
+   "toSide": "top",
+   "color": "2"
+  },
+  {
+   "id": "x_tfmg_create_r",
+   "fromNode": "tfmg",
+   "fromSide": "top",
+   "toNode": "create",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Chemical Vat runs create:mixing; Basin runs vat recipes"
+  },
+  {
+   "id": "x_kc_kc_tavern_r",
+   "fromNode": "kc",
+   "fromSide": "bottom",
+   "toNode": "kc_tavern",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "one shared quality scale (KC 4-step vs Tavern 6-step)"
+  },
+  {
+   "id": "x_bnc_kc_tavern_r",
+   "fromNode": "bnc",
+   "fromSide": "right",
+   "toNode": "kc_tavern",
+   "toSide": "left",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Keg and Barrel run each other's drink recipes"
+  },
+  {
+   "id": "x_cdg_kc_r",
+   "fromNode": "cdg",
+   "fromSide": "left",
+   "toNode": "kc",
+   "toSide": "right",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Plant Oil as cooking oil (c:plantoil)"
+  },
+  {
+   "id": "x_cdg_fd_r",
+   "fromNode": "cdg",
+   "fromSide": "bottom",
+   "toNode": "fd",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Plant Oil as cooking oil"
+  },
+  {
+   "id": "x_liquidfuel_kc_r",
+   "fromNode": "liquidfuel",
+   "fromSide": "bottom",
+   "toNode": "kc",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "pipe fuel into the KC Stove"
+  },
+  {
+   "id": "x_deliver_kc_r",
+   "fromNode": "deliver",
+   "fromSide": "top",
+   "toNode": "kc",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Crew Food Crate: deliver meals by quality"
+  },
+  {
+   "id": "x_numis_kc_r",
+   "fromNode": "numis",
+   "fromSide": "right",
+   "toNode": "kc",
+   "toSide": "left",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "sell dishes by quality in Vendors"
+  },
+  {
+   "id": "x_pg_ee_r",
+   "fromNode": "pg",
+   "fromSide": "right",
+   "toNode": "ee",
+   "toSide": "left",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "normalise W ↔ FE rates (10 FE/W vs 34 W per FE/t)"
+  },
+  {
+   "id": "x_ee_ca_r",
+   "fromNode": "ee",
+   "fromSide": "top",
+   "toNode": "ca",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "FE converter ratio vs alternator efficiency"
+  },
+  {
+   "id": "x_propulsion_ca_r",
+   "fromNode": "propulsion",
+   "fromSide": "bottom",
+   "toNode": "ca",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "one universal cable / connector"
+  },
+  {
+   "id": "x_sable_pg_r",
+   "fromNode": "sable",
+   "fromSide": "top",
+   "toNode": "pg",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "ship-safe wiring across sub-levels"
+  },
+  {
+   "id": "x_sable_ee_r",
+   "fromNode": "sable",
+   "fromSide": "top",
+   "toNode": "ee",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "ship-safe wiring across sub-levels"
+  },
+  {
+   "id": "x_sable_kc_r",
+   "fromNode": "sable",
+   "fromSide": "bottom",
+   "toNode": "kc",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "galley: cook mode on a moving ship"
+  },
+  {
+   "id": "x_sable_fd_r",
+   "fromNode": "sable",
+   "fromSide": "bottom",
+   "toNode": "fd",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "galley: cook mode on a moving ship"
+  },
+  {
+   "id": "x_cck_kc_tavern_r",
+   "fromNode": "cck",
+   "fromSide": "top",
+   "toNode": "kc_tavern",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "automate Barrel / Pressing Tub with arms and pipes"
+  },
+  {
+   "id": "x_kc_ui_r",
+   "fromNode": "kc",
+   "fromSide": "left",
+   "toNode": "ui",
+   "toSide": "right",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "AppleSkin: show quality-adjusted hunger"
+  },
+  {
+   "id": "x_kc_kubejs_r",
+   "fromNode": "kc",
+   "fromSide": "top",
+   "toNode": "kubejs",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "script dishes and minigame variants"
+  },
+  {
+   "id": "x_cc_numis_r",
+   "fromNode": "cc",
+   "fromSide": "bottom",
+   "toNode": "numis",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "bank / vendor peripheral"
+  },
+  {
+   "id": "x_cc_kc_r",
+   "fromNode": "cc",
+   "fromSide": "bottom",
+   "toNode": "kc",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "menu / pantry peripheral"
+  },
+  {
+   "id": "x_numis_floor_r",
+   "fromNode": "numis",
+   "fromSide": "bottom",
+   "toNode": "floor",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "one shared price table"
+  },
+  {
+   "id": "x_numis_tradeworks_r",
+   "fromNode": "numis",
+   "fromSide": "bottom",
+   "toNode": "tradeworks",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "shelf = shop display"
+  },
+  {
+   "id": "x_tradeworks_dd_r",
+   "fromNode": "tradeworks",
+   "fromSide": "bottom",
+   "toNode": "dd",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "shelves show plated dishes"
+  },
+  {
+   "id": "x_mobpkg_kc_r",
+   "fromNode": "mobpkg",
+   "fromSide": "bottom",
+   "toNode": "kc",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "order a dish as a package"
+  },
+  {
+   "id": "x_floor_kc_r",
+   "fromNode": "floor",
+   "fromSide": "right",
+   "toNode": "kc",
+   "toSide": "left",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Chef villager buys named dishes"
+  },
+  {
+   "id": "x_tfmg_petrochem_r",
+   "fromNode": "tfmg",
+   "fromSide": "right",
+   "toNode": "petrochem",
+   "toSide": "left",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "shared engine fuel table"
+  },
+  {
+   "id": "x_cdg_tfmg_r",
+   "fromNode": "cdg",
+   "fromSide": "left",
+   "toNode": "tfmg",
+   "toSide": "right",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "add TFMG crude to c:crude_oil; shared fuel table"
+  },
+  {
+   "id": "x_petrodep_tfmg_r",
+   "fromNode": "petrodep",
+   "fromSide": "top",
+   "toNode": "tfmg",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "one oil-chunk map for every pumpjack"
+  },
+  {
+   "id": "x_propulsion_cdg_r",
+   "fromNode": "propulsion",
+   "fromSide": "bottom",
+   "toNode": "cdg",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "thruster fuel from c:fuel tags"
+  },
+  {
+   "id": "x_kinlift_petrochem_r",
+   "fromNode": "kinlift",
+   "fromSide": "bottom",
+   "toNode": "petrochem",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "jets burn Petrochem kerosene"
+  },
+  {
+   "id": "x_liquidfuel_tfmg_r",
+   "fromNode": "liquidfuel",
+   "fromSide": "top",
+   "toNode": "tfmg",
+   "toSide": "bottom",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Blaze Burner accepts all c:fuel"
+  },
+  {
+   "id": "x_dragons_dyedepot_r",
+   "fromNode": "dragons",
+   "fromSide": "bottom",
+   "toNode": "dyedepot",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "dye unification across mods"
+  },
+  {
+   "id": "x_dyebridge_dyedepot_r",
+   "fromNode": "dyebridge",
+   "fromSide": "right",
+   "toNode": "dyedepot",
+   "toSide": "left",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "bridge more mods"
+  },
+  {
+   "id": "x_seats_kc_r",
+   "fromNode": "seats",
+   "fromSide": "bottom",
+   "toNode": "kc",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "KC chairs/tables as seats on ships"
+  },
+  {
+   "id": "x_hoseconn_ca_r",
+   "fromNode": "hoseconn",
+   "fromSide": "bottom",
+   "toNode": "ca",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Sable wires for CA/PG/EE"
+  },
+  {
+   "id": "c_guns",
+   "fromNode": "center",
+   "fromSide": "top",
+   "toNode": "hub_guns",
+   "toSide": "bottom",
+   "color": "3"
+  },
+  {
+   "id": "t_bpixel",
+   "fromNode": "hub_player",
+   "fromSide": "top",
+   "toNode": "bpixel",
+   "toSide": "bottom",
+   "color": "2"
+  },
+  {
+   "id": "t_irons",
+   "fromNode": "hub_guns",
+   "fromSide": "top",
+   "toNode": "irons",
+   "toSide": "bottom",
+   "color": "3"
+  },
+  {
+   "id": "t_yagm",
+   "fromNode": "hub_player",
+   "fromSide": "left",
+   "toNode": "yagm",
+   "toSide": "right",
+   "color": "2"
+  },
+  {
+   "id": "x_bpixel_yagm_r",
+   "fromNode": "bpixel",
+   "fromSide": "bottom",
+   "toNode": "yagm",
+   "toSide": "top",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "worn Pixel Backpacks (player data) go into the grave via YAGM accessory API"
+  },
+  {
+   "id": "x_irons_create_r",
+   "fromNode": "irons",
+   "fromSide": "right",
+   "toNode": "create",
+   "toSide": "left",
+   "fromEnd": "arrow",
+   "toEnd": "arrow",
+   "color": "1",
+   "label": "Create-built guns: fill gaps beyond Cogs For Arms"
+  }
+ ]
+}

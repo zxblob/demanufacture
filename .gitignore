@@ -1,0 +1,36 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+runs
+run-data
+
+repo
+# other mods' jars (compile-only dependencies); drop them into libs/ yourself
+libs/
+ArtificeCannons/libs/
+
+# obsidian per-machine state
+planning/.obsidian/workspace.json
+planning/.obsidian/workspaces.json
+
+# generated
+*.log

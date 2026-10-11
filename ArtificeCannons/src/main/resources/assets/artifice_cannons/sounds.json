@@ -1,0 +1,29 @@
+{
+  "potato_cannon_shoot": {
+    "sounds": [
+      {
+        "name": "create:fwoomp",
+        "type": "file"
+      }
+    ],
+    "subtitle": "artifice_cannons.subtitle.potato_cannon_shoot"
+  },
+  "flamethrower_shoot": {
+    "sounds": [
+      {
+        "name": "minecraft:item.firecharge.use",
+        "type": "event"
+      }
+    ],
+    "subtitle": "artifice_cannons.subtitle.flamethrower_shoot"
+  },
+  "electro_zapper_shoot": {
+    "sounds": [
+      {
+        "name": "powergrid:electrozapper_shoot",
+        "type": "file"
+      }
+    ],
+    "subtitle": "artifice_cannons.subtitle.electro_zapper_shoot"
+  }
+}

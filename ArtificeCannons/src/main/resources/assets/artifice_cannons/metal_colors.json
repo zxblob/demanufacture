@@ -1,0 +1,3 @@
+{
+  "_comment": "Optional per-metal base colour overrides, e.g. \"zinc\": \"#9FB0AE\". By default colours are sampled from the metal's ingot texture. Reload with F3+T."
+}

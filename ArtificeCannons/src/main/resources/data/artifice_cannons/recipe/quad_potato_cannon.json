@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tfmg"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "tfmg:pipe_bomb"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "S": {
+      "item": "tfmg:heavy_plate"
+    },
+    "P": {
+      "item": "tfmg:quad_potato_cannon"
+    },
+    "K": {
+      "item": "irons_artifice:clockwork_components"
+    },
+    "F": {
+      "item": "irons_artifice:blackpowder"
+    }
+  },
+  "pattern": [
+    "BTB",
+    "SPS",
+    "KFK"
+  ],
+  "result": {
+    "id": "artifice_cannons:quad_potato_cannon",
+    "count": 1
+  }
+}

@@ -20,7 +20,7 @@
   "electro_zapper_shoot": {
     "sounds": [
       {
-        "name": "powergrid:electrozapper_shoot",
+        "name": "artifice_cannons:electrozapper_shoot",
         "type": "file"
       }
     ],

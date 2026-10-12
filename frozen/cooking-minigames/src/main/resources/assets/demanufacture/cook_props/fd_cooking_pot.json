@@ -1,0 +1,71 @@
+{
+ "format_version": "1.8.0",
+ "animations": {
+  "fd_cooking_pot.work": {
+   "loop": true,
+   "animation_length": 1.5,
+   "bones": {
+    "spoom": {
+     "rotation": {
+      "0": {
+       "vector": [
+        -0.0,
+        -0.0,
+        0.0
+       ],
+       "lerp_mode": "linear"
+      },
+      "0.25": {
+       "vector": [
+        -0.0,
+        -60.0,
+        0.0
+       ],
+       "lerp_mode": "linear"
+      },
+      "0.5": {
+       "vector": [
+        -0.0,
+        -107.5,
+        0.0
+       ],
+       "lerp_mode": "linear"
+      },
+      "0.75": {
+       "vector": [
+        -0.0,
+        -160.0,
+        0.0
+       ],
+       "lerp_mode": "linear"
+      },
+      "1": {
+       "vector": [
+        -0.0,
+        -247.5,
+        0.0
+       ],
+       "lerp_mode": "linear"
+      },
+      "1.25": {
+       "vector": [
+        -0.0,
+        -292.5,
+        0.0
+       ],
+       "lerp_mode": "linear"
+      },
+      "1.5": {
+       "vector": [
+        -0.0,
+        -360.0,
+        0.0
+       ],
+       "lerp_mode": "linear"
+      }
+     }
+    }
+   }
+  }
+ }
+}

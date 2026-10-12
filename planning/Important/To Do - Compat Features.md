@@ -1,6 +1,6 @@
 ---
 status: planned
-updated: 2026-10-10
+updated: 2026-10-12
 ---
 # To do: compat features
 
@@ -26,8 +26,8 @@ Where the ideas came from: [[Pack Scan - Compat Features]], [[Electricity Audit]
 - [x] **P2 · S · Check TACZ + Iron's Artifice work side by side.** `[V]` The pack now has two separate gun systems (TACZ with GunsmithLib and TaCZ JS, plus Iron's Arms 'n Artifice). Check ammo, damage and recipes don't clash, and that Entity Model Features / Texture Features (both updated) don't break first-person hands for either.
 - [x] **P2 · M · Unify ammo / gun parts across TACZ and Iron's Artifice.** `[I]` One ammo family, or conversion recipes between them. Green arrow on the map.
 - [x] **Craft TACZ guns and ammo with Create machines: already done by Create Immersive TaCZ (installed).** `[V]` It adds Create recipes (mechanical crafting 38, sequenced assembly 6, cutting 6, mixing, compacting, filling) for gun barrels, trigger mechanisms, casings, primers and firing mechanisms. The earlier plan for an adapter is not needed.
-- [ ] **P2 · S · Audit Create Immersive TaCZ** the same way as Cogs For Arms: what is covered, what is still hand-crafted only.
-- [ ] **P3 · M · Share parts and ammo between Cogs For Arms (Iron's Artifice) and Create Immersive TaCZ (TACZ).** `[I]` Two separate Create bridges for two gun mods. Green arrow on the map.
+- [x] ~~**P2 · S · Audit Create Immersive TaCZ** the same way as Cogs For Arms: what is covered, what is still hand-crafted only.~~ (obsolete 2026-10-12: TACZ removed)
+- [x] ~~**P3 · M · Share parts and ammo between Cogs For Arms (Iron's Artifice) and Create Immersive TaCZ (TACZ).** `[I]` Two separate Create bridges for two gun mods. Green arrow on the map.~~ (obsolete 2026-10-12: TACZ removed)
 - [ ] **P1 · L · IANA addon: every Create-addon Potato Cannon becomes an Iron's Arms 'n Artifice gun (2026-10-10 request).**
   - `[V]` Cannons in the pack today: **Create Potato Cannon**, **TFMG Advanced Potato Cannon** (Napalm Potato ammo) and **TFMG Quad Potato Cannon**. No other addon adds one (searched all jars; Railways only mixes into Create's). Spout Gun (Create: Things and Misc) is not a potato cannon.
   - `[V]` IANA guns are Java `GunItem`s built from a `GunProfile` (`gun/Guns`), rendered with GeckoLib geo + animations (`idle`, `fire`, `reload`, `equip`), no data-driven path. So this needs a small NeoForge addon mod (separate from Demanufacture; soft-depends on Create + TFMG). Public hooks: `GunShootEvent`, `AmmoEvent`, `ComposeShotEvent`, `BulletImpactEvent`.
@@ -38,30 +38,29 @@ Where the ideas came from: [[Pack Scan - Compat Features]], [[Electricity Audit]
   - Still open: air-pressure/backtank use for the TFMG ones, exact recipe parts.
   - **2026-10-11 gun-class survey (IANA has 7 guns):** covered = single-shot pistol (Flintlock), revolver (Blackpowder, Six-Shooter), single-shot rifle (Musket), shotgun (Blunderbuss), slow repeater (Arquebus), full-auto rifle (Clockwork). **Missing:** semi-auto battle rifle / DMR, LMG / heavy auto, explosive or incendiary launcher, SMG (no one-handed auto), burst fire (FireMode only has SEMI and AUTO). **Decided 2026-10-11 (user's call):** Create cannon = heavy slow repeater (arquebus-like, 8 shots), TFMG Advanced = LMG (AUTO, 30 rounds), TFMG Quad = rocket launcher (4 rockets per pull, 8 rounds so 2 pulls, explodes on impact, no block damage yet). Implemented in `ArtificeCannons.java` / `RocketBehaviour.java`, not yet playtested.
   - **Paintjobs (2026-10-11, built, untested):** gun + any dye in the crafting grid (all 32 colours incl. Dye Depot), or Create Spout with paint fluid made in a Basin (1 dye + 250 mB water -> 250 mB paint; a gun takes 50 mB; keeps magazine and modifiers). Whole-model tint for now; a per-gun paint mask (so metal stays unpainted) is the next art step. Applies to all IANA guns, not just ours.
-  - **More gun ideas from the pack (2026-10-11):** TFMG Flamethrower (auto, short range, fire), Powergrid Electro-Zapper (energy pistol / arc), TFMG grenades (Copper, Zinc, Thermite) as ammo for a grenade launcher, Create Spout Gun (fluid cannon, damage by fluid). No natural fit for SMG / sniper / burst: those would be invented items.
-  - **Flamethrower + Electro-Zapper (2026-10-11, built, untested):** models in `ArtificeCannons/blockbench/` ready to animate. Placeholder ammo (IANA bullets); TODO real fuel (TFMG fluid) and energy (Powergrid Portable Battery) hooks.
+  - **More gun ideas from the pack (2026-10-11):** TFMG Flamethrower (auto, short range, fire), Electro-Zapper (Power Grid is gone, the item lives in Demanufacture now) (energy pistol / arc), TFMG grenades (Copper, Zinc, Thermite) as ammo for a grenade launcher, Create Spout Gun (fluid cannon, damage by fluid). No natural fit for SMG / sniper / burst: those would be invented items.
+  - **Flamethrower + Electro-Zapper (2026-10-11, built, untested):** models in `ArtificeCannons/blockbench/` ready to animate. Placeholder ammo (IANA bullets); TODO real fuel (TFMG fluid) and energy hook (the Demanufacture Electro-Zapper stores FE itself; the IANA zapper recipe needs it). **2026-10-12: you decided real ammo / fuel / battery hooks are NOT wanted; bullets stay.**
   - **Balance pass (2026-10-11, untested):** table of all five guns vs IANA's seven is in `ArtificeCannons/README.md`. Slots: Potato 7, Advanced 6, Quad 4, Flamethrower 5, Zapper 5.
 
 ---
 ## 1. Housekeeping (small, do before building)
 
 - [x] **Duplicate jars: decided, leave them.** `tfmg-1.2.2` + `tfmg-1.21.1-1.3.2a-community` (the community one is a fork) and two `cc-tweaked` versions stay as they are; you said they work. Open Question 13.
-- [ ] **P1 · S · Playtest the energy loop** Power Grid → FE → Electro Energetics (and back through the Crafts & Additions alternator): does energy grow, shrink or stay flat? Open Question 14.
-- [ ] **P2 · S · Confirm the FE direction on Power Grid's FE inverter.** `[V]` The bridge class I read is output-only; check the inverter block covers FE → Power Grid.
-- [ ] **P2 · S · Check which pack changes on 2026-10-09 need follow-up.** Removed: Backpacked, Wet Backpacks, Chemica, Create: Metalwork, Create Nuclear, Create Radiologistics, Create IDLX, Naturalist Delight. Added: Create Immersive TaCZ, TaCZ Pack Upgrader, Create Stuff 'N Additions. Also: `sable_sa_compat` (Create: Stuff & Additions on ships), Dusty Decorations 2.2.0 (now GeckoLib), Gadgets & Gizmos 1.2.7. All dependencies of the new jars are present `[V]`.
+- [x] ~~**P1 · S · Playtest the energy loop** Power Grid → FE → Electro Energetics~~ (obsolete 2026-10-12: Power Grid removed; Open Question 14 is moot)
+- [ ] **P1 · S · Add the Demanufacture jar to `mods/` and play the Electro-Zapper + Factory Light.** Power Grid is already gone from the pack, so right now neither item exists in the world and the IANA Electro-Zapper cannot be crafted. Details: handoff section 11.
+- [x] ~~**P2 · S · Confirm the FE direction on Power Grid's FE inverter.** `[V]` The bridge class I read is output-only; check the inverter block covers FE → Power Grid.~~ (obsolete 2026-10-12: Power Grid removed)
+- [ ] **P2 · S · Follow up the 2026-10-12 pack diff** (details in [[Mod List Snapshot]]). Removed: TACZ family + Create Immersive TaCZ, Create: Power Grid. Added: Create: Atomic, Polymorph, Spice of Life Onion, Player Animator, Towns and Towers, Explorify, Trek, Simply Tooltips, Spatial GUI, OrthoCamera. Items below were updated for this; still to do: Polymorph and Spice of Life Onion checks (new items at the end of section 8).
+- [x] ~~**P2 · S · Check which pack changes on 2026-10-09 need follow-up.** Removed: Backpacked, Wet Backpacks, Chemica, Create: Metalwork, Create Nuclear, Create Radiologistics, Create IDLX, Naturalist Delight. Added: Create Immersive TaCZ, TaCZ Pack Upgrader, Create Stuff 'N Additions. Also: `sable_sa_compat` (Create: Stuff & Additions on ships), Dusty Decorations 2.2.0 (now GeckoLib), Gadgets & Gizmos 1.2.7. All dependencies of the new jars are present `[V]`.~~
 - [ ] **P3 · S · Decide the mod vs KubeJS line.** Default: Java only where scripts can't do it. Balance stance for adapters is Open Question 12.
 
 ---
 ## 2. Electricity and energy (first pack-wide target)
 
-- [ ] **P1 · S · E6: write a balance sheet** of every generation / conversion rate (Crafts & Additions, Power Grid, Electro Energetics, TFMG, Propulsion) so tuning is possible even without code. Needs the playtest above.
-- [ ] **P1 · M · E1: normalise units.** One config table "1 FE = X W = Y SU", then set each mod's rates from it. `[V]` Rates today: PG `forgeEnergyPerWatt 10`, EE `34 W = 1 FE/tick`, CA alternator `0.75` efficiency, `480 FE at max RPM`.
-- [ ] **P2 · S · E5: shared meter** (goggles / Jade readout) showing W, FE/t and SU for any electric block.
+- [ ] **P1 · S · Audit Create: Atomic (new 2026-10-12, MRH0, not Create Nuclear).** `[V]` Reactor multiblock (Rod Assembly, Reactor Casing, Steam Turbine, Redstone Interface), RTG (FE), Radioisotope Heat Generators (boiler heat, decay in 3 stages), Crude Nuclear Bomb, uranium / plutonium chain. Check: does the reactor output fit E1 numbers, do the heat generators work with TFMG / KC stoves, does the meltdown debris need a safe-zone rule on ships, and which Create machines make its fuel rods.
 - [x] ~~E3: Create Nuclear → FE tap~~ **n/a: Create Nuclear was removed from the pack (2026-10-09).**
 - [x] ~~Nuclear radiation alarm~~ **n/a: Create Nuclear removed.**
-- [ ] **P3 · L · E2: one universal cable / connector** that joins Crafts & Additions wires, Propulsion FE cables and the other cable networks.
-- [ ] **P3 · L · E4: ship-safe wiring** for Power Grid, Electro Energetics and Propulsion cables across Sable sub-levels. `[V]` Only Crafts & Additions has this today (`sable_createaddition_compat`).
-- [ ] **P3 · M · Hose Connectors for Crafts & Additions / Power Grid / Electro Energetics** wires between ships and the world. `[V]` `VS-Sable-HoseConnectors` has an electric wire connector for FE only.
+- [ ] **P3 · L · E4: ship-safe wiring** for Electro Energetics and Propulsion cables (and the Demanufacture Factory Light) across Sable sub-levels. `[V]` Only Crafts & Additions has this today (`sable_createaddition_compat`).
+- [ ] **P3 · M · Hose Connectors for Crafts & Additions / Electro Energetics** wires between ships and the world. `[V]` `VS-Sable-HoseConnectors` has an electric wire connector for FE only.
 
 ---
 ## 3. Machine and recipe-type adapters (the generic harmoniser)
@@ -71,14 +70,11 @@ One mechanism: machine A also runs recipe type B, read at runtime and configurab
 - [ ] **P1 · M · 8.1 TFMG Chemical Vat runs `create:mixing`**, and Basin runs vat recipes that need no pressure. `[V]` `create:mixing` 1,956 recipes, `tfmg:vat_machine_recipe` 223. First proof of the adapter idea.
 - [ ] **P1 · S · 8.2 KC Millstone ↔ Create Millstone / Crushing Wheels.** `[V]` `kaleidoscope_cookery:millstone` 85 recipes, `create:milling` 305.
 - [ ] **P2 · S · 8.14 Convert dead recipes** (`immersiveengineering:*`, `mekanism:*` shipped by FD and Crafts & Additions but those mods are not installed) into Create equivalents. Pure datapack.
-- [ ] **P2 · M · 8.5 Keg ↔ Tavern Barrel** drink recipes, plus fermenting (CDG basin / bulk fermenting).
 - [ ] **P2 · S · 8.6 Freezing:** one interface so any cold source freezes anything freezable (KC World Liquor freezer, Dragons Plus freezing, B&C freeze sources).
-- [ ] **P2 · M · 8.7 Distillation / refining:** same crude in, same fractions out whichever tower you build (TFMG, Petrochem, CDG).
 - [ ] **P2 · M · 8.9 One engine-fuel table.** `[V]` Per-mod today: `petrochem:*_engine_fuel`, `createaddition:liquid_burning`, TFMG fuel tags, `createkineticlift:turbofan_fuels`.
 - [ ] **P2 · S · Add TFMG crude oil to `c:crude_oil`.** `[V]` The tag lists CDG and Petrochem but I found no TFMG crude in it.
 - [ ] **P3 · M · 8.8 One oil-chunk map** for every pumpjack (TFMG, CDG, Petrochem, Petro Deposits).
 - [ ] **P3 · L · 8.4 Metal melting / casting:** `[V]` Create: Metalwork (which shipped most of the melting and casting recipes) was **removed**; re-check what is left (TFMG casting, CDG casting) before deciding if this is still needed.
-- [ ] **P3 · M · 8.3 KC chopping board recipes on the Create saw** (FD cutting is already bridged by Central Kitchen `[V]`).
 - [ ] **P3 · S · 8.11 Mechanical Press runs CDG hammering** and the reverse.
 - [ ] **P3 · M · 8.10 Rolling / charging recipes usable by TFMG machines.**
 - [ ] **P3 · S · 8.12 FD pot recipes usable in the KC stockpot** and the reverse.
@@ -95,12 +91,8 @@ One mechanism: machine A also runs recipe type B, read at runtime and configurab
 ---
 ## 5. Economy and delivery
 
-- [ ] **P2 · M · One shared price table** for Numismatics, Delivery Required (its "Price worldshaper") and villagers.
-- [ ] **P2 · M · Crew Food Crate contracts:** deliver meals to an airship through Delivery Required, reward by quality. `[V]` The contract string exists; mechanics not read.
 - [ ] **P3 · M · Sell dishes by quality** in Numismatics Vendors (note: Vendors cannot filter special data in Buy mode `[V]`).
-- [ ] **P3 · M · Chef villager** (Trading Floor) that buys named dishes and sells rare ingredients.
 - [ ] **P3 · S · Tradeworks shelves as shop displays**, and as holders for plated dishes (Display Delight).
-- [ ] **P3 · L · Order a dish as a package** (Mobile Packages / Factory Gauge).
 - [ ] **P3 · S · CC: Tweaked peripherals:** bank / vendor (Numismatics), menu / pantry (cooking).
 
 ---
@@ -108,7 +100,6 @@ One mechanism: machine A also runs recipe type B, read at runtime and configurab
 
 - [ ] **P3 · L · Galley on a moving ship:** cook mode and basket scan on Sable sub-levels. Biggest unknown; needs a test of block positions on sub-levels first.
 - [ ] **P3 · S · KC chairs and tables as seats on ships** (`createfurnitureseats` already bridges other furniture `[V]`).
-- [ ] **P3 · L · Steam-powered stove** from Create boiler vents `[I]`.
 
 ---
 ## 7. Player, backpacks and graves
@@ -119,22 +110,23 @@ One mechanism: machine A also runs recipe type B, read at runtime and configurab
 ---
 ## 8. Information and tooling
 
-- [ ] **P2 · S · Jade tooltip** for pot contents and doneness.
 - [ ] **P2 · S · Check AppleSkin shows the real hunger/saturation** of quality-adjusted dishes (KC modifies food properties `[V]`).
 - [ ] **P3 · M · JEI category** showing the minigame steps for a dish.
 - [ ] **P3 · M · Ponder scenes** teaching each minigame (PonderJS installed).
 - [ ] **P3 · M · KubeJS bindings** so the pack author can define dishes, minigame variants and adapters from scripts.
-- [ ] **P3 · M · Data-driven adapter and minigame definitions** (datapack JSON).
 - [ ] **P3 · S · Dye unification** across Dye Depot, Dye The World, Dragons Plus and the bridge mods.
+- [ ] **P2 · S · Polymorph vs the adapters.** `[V]` Polymorph (new) lets the player pick between recipes that share inputs. Every adapter we add (8.1, 8.2, 8.12) can create duplicate-input recipes: check they show a choice instead of silently overriding, and decide the order.
+- [ ] **P2 · M · Spice of Life Onion vs dishes.** `[V]` SOL Onion (new) rewards eating varied food by item id. Our `demanufacture:cooked_dish` is one item, so every dish counts as the same food. Needs either a per-dish food identity (hash of the ingredient set) or a KC / SOL tag setup. Decide whether dishes should count at all.
+- [x] ~~Radiation × food~~ **n/a** (Create Nuclear removed). **Create: Atomic radiation is a separate question:** check if its RTG / debris applies a status effect that food can cure `[I]`.
 
 ---
-## 9. Cooking minigames (FROZEN since 2026-10-08)
+## 9. Cooking minigames (UNFROZEN 2026-10-12)
 
-Nothing here starts until you unfreeze it. Decisions already made: hand-cooking stays optional (no quality gate); dish quality will write into Kaleidoscope Cookery's own quality (Superb / Excellent / Standard / Poor).
+Unfrozen on 2026-10-12. New direction: **no GUI for the minigame itself** (in-world camera and animated player arms; GUI only for basket and oil / liquid). Rig batch 1 exists in `art/Cooking Rigs/` (see its README). Order: persistence + KC quality + cookbook recipe, then the scene prototype on Stirring, then the Skillet flip rework, Wok, boards. The ⏸ marks below are historical. Decisions already made: hand-cooking stays optional (no quality gate); dish quality will write into Kaleidoscope Cookery's own quality (Superb / Excellent / Standard / Poor).
 
-- [ ] ⏸ **Write the minigame result into KC's `QUALITY` component** (replace our five tiers). S.
-- [ ] ⏸ **Fix persistence:** `pot_ingredients` and `pot_liquid` are lost on chunk unload or restart (known bug from the handoff). S.
-- [ ] ⏸ **Cookbook recipe and creative tab** (right now it is `/give` only). S.
+- [x] **Write the minigame result into KC's `QUALITY` component** (replace our five tiers). S. **(done 2026-10-12: `KcQuality`; our five tiers map onto KC's four, dish applies KC food scaling + tooltip; untested in game)**
+- [x] **Fix persistence:** `pot_ingredients` and `pot_liquid` are lost on chunk unload or restart (known bug from the handoff). S. **(done 2026-10-12: both attachments now serialize; untested in game)**
+- [x] **Cookbook recipe and creative tab** (right now it is `/give` only). S. **(done 2026-10-12: shapeless book + FD Cooking Pot, tab "Demanufacture: Cooking"; untested in game)**
 - [ ] ⏸ **Skillet rework:** add the click-to-flip mechanic and make the shake band more forgiving (your answer to Open Question 9). M.
 - [ ] ⏸ **Arc drop animation** when you add an ingredient to the pot (Open Question 4). M.
 - [ ] ⏸ **Dishes remember how they were made** (action history), and build on KC's `RecipeItem` records. M.
@@ -155,3 +147,19 @@ Nothing here starts until you unfreeze it. Decisions already made: hand-cooking 
 - Touching the duplicate TFMG and CC: Tweaked jars (you answered Open Question 13: they work, leave them).
 - Making hand-cooking a quality gate over machines (you chose fun and optional).
 - Hypertube / Escalators on ships, radio-guided vehicles, random food filter and other low-value arrows from the first mind map. Removed 2026-10-08.
+
+- **2026-10-12, removed by you after review:**
+  - ~~**P2 · S · E5: shared meter**~~
+  - ~~**P3 · L · E2: one universal cable / connector** that joins Crafts & Additions wires, Propulsion FE cables and the other cable networks.~~
+  - ~~**P3 · M · 8.3 KC chopping board recipes on the Create saw**~~
+  - ~~**P3 · M · Chef villager**~~
+  - ~~**P3 · L · Order a dish as a package**~~
+  - ~~**P3 · L · Steam-powered stove** from Create boiler vents~~
+  - ~~**P3 · M · Data-driven adapter and minigame definitions**~~
+  - ~~**P1 · S · E6: write a balance sheet** of every generation / conversion rate~~
+  - ~~**P1 · M · E1: normalise units.** One config table "1 FE = X W = Y SU", then set each mod's rates from it.~~
+  - ~~**P2 · M · 8.5 Keg ↔ Tavern Barrel** drink recipes, plus fermenting~~
+  - ~~**P2 · M · 8.7 Distillation / refining:** same crude in, same fractions out whichever tower you build~~
+  - ~~**P2 · M · One shared price table** for Numismatics, Delivery Required~~
+  - ~~**P2 · M · Crew Food Crate contracts:** deliver meals to an airship through Delivery Required, reward by quality.~~
+  - ~~**P2 · S · Jade tooltip** for pot contents and doneness.~~

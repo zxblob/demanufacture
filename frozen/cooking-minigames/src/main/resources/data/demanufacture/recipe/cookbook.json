@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"item": "minecraft:book"},
+    {"item": "farmersdelight:cooking_pot"}
+  ],
+  "result": {"id": "demanufacture:cookbook", "count": 1}
+}

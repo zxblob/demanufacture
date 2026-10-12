@@ -1,16 +1,23 @@
 ---
 status: built
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 # Mod list snapshot
 
-Exact contents of the pack's `mods/` folder on 2026-10-09: **221 active jars** and **10 disabled**. Use it to diff the pack at the start of a session:
+Exact contents of the pack's `mods/` folder on 2026-10-12: **225 active jars** and **5 disabled**. Use it to diff the pack at the start of a session:
 
 ```bash
 ls "$HOME/Documents/curseforge/minecraft/Instances/New'O'Nautics/mods" | sort > /tmp/now.txt
 ```
 
 then compare with the lists below (`comm -3`). **Update this file whenever the pack changes**, so removals are never missed again.
+
+## Changes since 2026-10-09 (diffed 2026-10-12)
+**Removed (active):** TACZ, GunsmithLib, TaCZ JS, TaCZ Pack Upgrader, **Create Immersive TaCZ** (the whole TACZ family is gone), **Create: Power Grid** (`powergrid-mc1.21.1-0.6.2.jar`; the electricity module replaces it).
+**Removed (disabled leftovers):** create_stats, createtrainmining, kaleidoscope_compat patch, supplementaries, vivecraftcompat.
+**Added:** **Create: Atomic 1.3.2** (MRH0, author of Crafts & Additions; a *different* mod from the removed Create Nuclear: uranium/plutonium, reactor multiblock with steam turbine, RTG making FE, radioisotope heat generators, crude nuclear bomb; needs Create), Explorify, Trek (datapack), Towns and Towers, Polymorph, Spice of Life Onion, Simply Tooltips, Spatial GUI, OrthoCamera, Player Animator.
+**Updated:** Cogs For Arms 1.0.1 -> 1.1.0, Electro Energetics 1.1.2 -> 1.1.3, KC Immersive Eating 1.5.2 -> 1.5.4, Let's Do Furniture 1.1.5 -> 1.1.7, YAGM 0.1.2 -> 0.1.5.
+**Not yet in the pack:** the Demanufacture jar.
 
 ## Active
 - advancedcrafting-1.21.1-0.2.3.jar
@@ -48,7 +55,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - coasters-immersion-1.0.0.jar
 - coasters_extras-neoforge-1.21.1-1.2.jar
 - coastersengineered-1.21.1-1.1.1.jar
-- cogsforarms-1.0.1.jar
+- cogsforarms-1.1.0.jar
 - colorwheel-neoforge-1.2.7+mc1.21.1.jar
 - connector-2.0.0-beta.17+1.21.1-full.jar
 - Controlling-neoforge-1.21.1-19.0.5.jar
@@ -82,6 +89,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - createaddonorganizer-1.5__1.21.1.jar
 - CreateAeronauticsCopycatWing-1.21.1-1.0.2.jar
 - CreateAlerted-0.2.1.jar
+- createatomic-1.3.2.jar
 - createautomatics-1.0.1.jar
 - createdeco-2.1.3.jar
 - createdeliveryrequired-1.0.2.jar
@@ -90,7 +98,6 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - createestrogen-2.0.0+1.21.1.jar
 - createframed-1.21.1-1.8.2.jar
 - createfurnitureseats-4.8.42.jar
-- createimmersivetacz-1.6-neoforge.jar
 - createkineticlift-0.0.3a.jar
 - createliquidfuel-3.0.0-1.21.1.jar
 - CreateNumismatics-1.1.0+neoforge-mc1.21.1.jar
@@ -114,7 +121,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - dye_depot-2.1.1.jar
 - dye_depot_aeroworks-1.0.0.jar
 - dye_the_world-2.4.0.jar
-- electroenergetics-1.21.1-1.1.2.jar
+- electroenergetics-1.21.1-1.1.3.jar
 - Emojiful-Neoforge-1.21-5.2.2-all.jar
 - entity_model_features-3.3.11-1.21-neoforge.jar
 - entity_texture_features-7.2.5-1.21-neoforge.jar
@@ -125,6 +132,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - essentialtweaks-1.3.0+1.21.1-neoforge.jar
 - estrogen-6.0.10+1.21.1-neoforge.jar
 - EuphoriaPatcher-1.8.6-r5.7.1-neoforge.jar
+- Explorify v1.6.5.mod.jar
 - extra_gauges-2.1.3.jar
 - ExtremeSoundMuffler-3.56_NeoForge-1.21.jar
 - FarmersDelight-1.21.1-1.3.2.jar
@@ -137,7 +145,6 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - fzzy_config-0.7.6+1.21+neoforge.jar
 - gadgets-and-gizmos-bundled-V1.2.7.jar
 - geckolib-neoforge-1.21.1-4.9.3.jar
-- gunsmithlib-neoforge-1.21.1-tacz1.1.8-6.4.5.jar
 - handcrafted-neoforge-1.21.1-4.0.3.jar
 - ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar
 - immersive_paintings-neoforge-1.21.1-0.7.9.jar
@@ -148,7 +155,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - Jade-1.21.1-NeoForge-15.10.5.jar
 - jei-1.21.1-neoforge-19.27.0.336.jar
 - kaleidoscope_contraption-1.0.4.jar
-- kaleidoscope_ImmersiveEating-neoforge1.21.1-1.5.2.jar
+- kaleidoscope_ImmersiveEating-neoforge1.21.1-1.5.4.jar
 - kaleidoscope_world_liquor-1.1.9-neoforge+1.21.1-fix.jar
 - kaleidoscopecookery-1.6.0-neoforge+mc1.21.1.jar
 - kaleidoscopecookery_automation-1.0.2.jar
@@ -164,7 +171,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - lakefeaturefix-0.0.2-1.21.1-neoforge.jar
 - larion-neoforge-1.21.1-4.3.0.jar
 - ldlib2-neoforge-1.21.1-2.2.17-all.jar
-- letsdo-furniture-neoforge-1.1.5.jar
+- letsdo-furniture-neoforge-1.1.7.jar
 - lever-drugster-1.8.8.jar
 - libraryferret-neoforge-1.21.1-4.0.0.jar
 - lootjs-neoforge-1.21.1-3.7.0.jar
@@ -178,11 +185,13 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - nowheel-1.0.6+1.21.1neoforge.jar
 - OctoLib-NEOFORGE-0.6.2+1.21.jar
 - ok_zoomer-neo-10.0.0-beta.13.jar
+- orthocamera-1.21.1-0.2.0.jar
 - petrochem-neoforge-1.21.1-1.3.3.jar
 - Placebo-1.21.1-9.9.1.jar
 - Platform-neoforge-1.21.1-1.3.3.jar
+- player-animation-lib-forge-2.0.4+1.21.1.jar
+- polymorph-neoforge-1.1.0+1.21.1.jar
 - ponderjs-neoforge-1.21.1-2.4.0.jar
-- powergrid-mc1.21.1-0.6.2.jar
 - ProbeJS-8.0.2.jar
 - Quark-4.1-479.jar
 - railways-0.3.0-beta.2+neoforge-mc1.21.1.jar
@@ -200,6 +209,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - sablejade-1.2.1.jar
 - sawmill-1.21-1.7.2-neoforge.jar
 - Searchables-neoforge-1.21.1-1.0.2.jar
+- SimplyTooltips-neoforge-0.1.5.jar
 - simulated_gauges-1.1.0.jar
 - simulatedcoasters-0.1.5.jar
 - simurail-0.1.0+mc1.21.1+10c91b8.jar
@@ -209,11 +219,11 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - sodium-neoforge-0.8.12+mc1.21.1.jar
 - someassemblyrequired-5.2.8.jar
 - sound-physics-remastered-neoforge-1.21.1-1.5.1.jar
+- spatial-gui-1.7.2+1.21.1-neoforge.jar
+- Spice of Life Onion_NEOFORGE_v1.5.7_mc1.21.1.jar
 - struts-1.3.1.jar
 - synaxis-1.5.0.jar
-- tacz-neoforge-1.21.1-1.1.8-hotfix-r7.jar
-- tacz-pack-upgrader-2.1.3.jar
-- taczjs-neoforge-1.4.2+mc1.21.1.jar
+- t_and_t-fabric-neoforge-1.13.11.jar
 - tfmg-1.2.2.jar
 - tfmg-1.21.1-1.3.2a-community.jar
 - tfmgjs-1.21.1-1.0.1.jar
@@ -221,6 +231,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - tracks_plus-1.0.5.jar
 - tradeworks-1.0.7.jar
 - trading_floor-3.0.16.jar
+- trek-B0.6.2.jar
 - Twigs-1.21.1-3.1.2.jar
 - txnilib-neoforge-1.0.24-1.21.1.jar
 - VanillaBackport-neoforge-1.21.1-1.1.7.10.jar
@@ -230,7 +241,7 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - xaerominimap-neoforge-1.21.1-25.3.13.jar
 - xaerotrainmap-1.0.0.jar
 - xaeroworldmap-neoforge-1.21.1-1.40.16.jar
-- yagm-1.21.1-0.1.2-NEOFORGE.jar
+- yagm-1.21.1-0.1.5-NEOFORGE.jar
 - yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar
 - yuushya-1.21.0-neoforge-2.2.3.jar
 - Zeta-1.1-40.jar
@@ -239,10 +250,5 @@ then compare with the lists below (`comm -3`). **Update this file whenever the p
 - aeronautics_flashback-1.0.2.jar.disabled
 - bits_n_tracks-2.1.0.jar.disabled
 - create_flashback-1.0.3.jar.disabled
-- create_stats-1.14.5.jar.disabled
-- createtrainmining-1.3.jar.disabled
 - Flashback-0.39.9-for-MC1.21.1.jar.disabled
 - forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar.disabled
-- kaleidoscope_compat-2.9.7-neoforge+mc1.21.1-Patch.jar.disabled
-- supplementaries-1.21.1-3.9.9-neoforge.jar.disabled
-- vivecraftcompat-1.21-1.5.1.jar.disabled

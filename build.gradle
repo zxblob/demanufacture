@@ -113,14 +113,9 @@ configurations {
 }
 
 dependencies {
-    // Farmer's Delight and Kaleidoscope Cookery: compile against their classes,
-    // and put them on the dev-run classpath too (localRuntime) so FML loads them
-    // as mods when we launch runClient/runServer, without publishing a dependency on them.
-    compileOnly files("libs/FarmersDelight-1.21.1-1.3.2.jar")
-    localRuntime files("libs/FarmersDelight-1.21.1-1.3.2.jar")
-
-    compileOnly files("libs/kaleidoscopecookery-1.6.0-neoforge+mc1.21.1.jar")
-    localRuntime files("libs/kaleidoscopecookery-1.6.0-neoforge+mc1.21.1.jar")
+    // Nothing yet: the harmoniser modules will add their target jars here (compileOnly + localRuntime from libs/).
+    // The frozen cooking minigames needed Farmer's Delight, Kaleidoscope Cookery and Player Animator:
+    // see frozen/cooking-minigames/README.md.
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

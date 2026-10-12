@@ -30,6 +30,8 @@ public class ArtificeCannons {
     public static final String MOD_ID = "artifice_cannons";
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
+    /** Blocks of the electricity module (Factory Light); the guns need none. */
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
     public static final int QUAD_BARRELS = 4;
     public static final int QUAD_ROUNDS = 8;
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(Registries.SOUND_EVENT, MOD_ID);
@@ -93,7 +95,9 @@ public class ArtificeCannons {
 
     public ArtificeCannons(IEventBus modBus) {
         ITEMS.register(modBus);
+        BLOCKS.register(modBus);
         SOUNDS.register(modBus);
+        com.zxblob.artificecannons.electricity.ElectricityModule.init(modBus);
         RocketBehaviour.register();
         BurstBehaviour.register();
         ExtraGuns.register();

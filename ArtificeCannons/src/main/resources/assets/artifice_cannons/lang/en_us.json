@@ -93,5 +93,13 @@
   "fluid_type.artifice_cannons.paint_metal_silver": "Silver Plating Paint",
   "metal.artifice_cannons.silver": "Silver",
   "fluid_type.artifice_cannons.paint_metal_lithium": "Lithium Plating Paint",
-  "metal.artifice_cannons.lithium": "Lithium"
+  "metal.artifice_cannons.lithium": "Lithium",
+  "item.artifice_cannons.zapper_tool": "Electro-Zapper",
+  "item.artifice_cannons.zapper_tool.summary": "Fires a lightning bolt that jumps to nearby enemies, splitting the damage. Runs on FE.",
+  "item.artifice_cannons.zapper_tool.cost": "%s FE per shot",
+  "item.artifice_cannons.zapper_tool.empty": "Out of charge",
+  "block.artifice_cannons.factory_light": "Factory Light",
+  "block.artifice_cannons.factory_light_beam": "Factory Light Beam",
+  "death.attack.artifice_cannons.zap": "%1$s was zapped",
+  "death.attack.artifice_cannons.zap.player": "%1$s was zapped by %2$s"
 }

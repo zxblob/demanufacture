@@ -1,0 +1,647 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "axis": "x",
+        "part": "0",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "0",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "0",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "0",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "1",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "1",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "1",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "1",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "2",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "2",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "2",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "2",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "3",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "3",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "3",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "3",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "4",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "4",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "4",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "4",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "5",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "5",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "5",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "5",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "6",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "6",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "6",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "6",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "0",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "0",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "0",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "0",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylight"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "1",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "1",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "1",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "1",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightnorthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "2",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "2",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "2",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "2",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterns"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "3",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "3",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "3",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "3",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightsouthedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "4",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "4",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "4",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "4",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightwestedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "5",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "5",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "5",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "5",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylightcenterew"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "6",
+        "power": "0"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/empty/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "6",
+        "power": "1"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "6",
+        "power": "2"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "6",
+        "power": "3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/factorylighteastedge"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "0",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godrayssingular"
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "4",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godraysedgefront",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "5",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godrayscenter",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "axis": "x",
+        "part": "6",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godraysedgeback",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "0",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godrayssingular"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "1",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godraysedgefront"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "2",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godrayscenter"
+      }
+    },
+    {
+      "when": {
+        "axis": "z",
+        "part": "3",
+        "power": "2|3"
+      },
+      "apply": {
+        "model": "artifice_cannons:block/factory_light/godraysedgeback"
+      }
+    }
+  ]
+}

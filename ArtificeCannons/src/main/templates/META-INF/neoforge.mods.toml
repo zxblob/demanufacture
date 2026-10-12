@@ -33,3 +33,18 @@ description='''${mod_description}'''
     versionRange="[4.9.3,)"
     ordering="NONE"
     side="BOTH"
+
+# Electricity module: only registers when these are present.
+[[dependencies.${mod_id}]]
+    modId="create"
+    type="optional"
+    versionRange="[6.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="electroenergetics"
+    type="optional"
+    versionRange="[1.1,)"
+    ordering="AFTER"
+    side="BOTH"

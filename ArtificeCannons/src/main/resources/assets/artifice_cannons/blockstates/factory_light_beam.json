@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "power=0": {
+      "model": "minecraft:block/air"
+    },
+    "power=1": {
+      "model": "minecraft:block/air"
+    }
+  }
+}

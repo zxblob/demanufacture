@@ -1,0 +1,19 @@
+{
+  "itemGroup.demanufacture.cooking": "Demanufacture: Cooking",
+  "item.demanufacture.cookbook": "Cookbook",
+  "block.demanufacture.cookbook_block": "Cookbook",
+  "item.demanufacture.cooked_dish": "Cooked Dish",
+  "message.demanufacture.cook_mode.on": "Cook mode on",
+  "message.demanufacture.cook_mode.off": "Cook mode off",
+  "screen.demanufacture.placeholder_cook": "Cooking...",
+  "screen.demanufacture.stirring": "Stirring",
+  "screen.demanufacture.scrambling": "Scrambling",
+  "screen.demanufacture.cookbook_menu": "Cookbook",
+  "button.demanufacture.cook_mode_on": "Cook Mode: ON",
+  "button.demanufacture.cook_mode_off": "Cook Mode: OFF",
+  "page.demanufacture.cookbook_menu.settings": "Settings",
+  "page.demanufacture.cookbook_menu.settings_body": "Toggle cook mode to start preparing meals at a Stockpot or Cooking Pot.",
+  "page.demanufacture.cookbook_menu.recipes": "Recipes",
+  "page.demanufacture.cookbook_menu.recipes_body": "No dishes discovered yet. Cook something and come back!",
+  "page.demanufacture.cookbook_menu.served_count": "Served: %s"
+}

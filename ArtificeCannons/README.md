@@ -55,3 +55,9 @@ Two layers per gun: **dye** recolours the *accent* colours of the texture (wood 
 No per-gun lists: `client/PaletteRecolor` classifies every *cube* from its own texels. Dark warm browns are **wood** (only a dye changes them; with metal paint alone they stay wood). On guns with no wood, cubes in grip / mag / cog style bones, or clear colour outliers, are **trim** (dye if present, else the metal). Everything else is **metal**. Cube-level roles mean a part is never half recoloured. Each group is repainted from a shadow-base-highlight ramp of the new colour, anchored so the group's median brightness becomes exactly the new colour (darker/lighter original tones stay darker/lighter). Generated textures are cached per gun/dye/metal and cleared on F3+T. Metal colours: `Metals.java`.
 
 Metals: crafting accepts **any** item tagged `c:ingots/<x>`, `c:raw_materials/<x>` or `c:ores/<x>` (tin, tungsten, anything from any mod); the colour is sampled from that item's texture (`client/MetalPalette`), `metal_colors.json` overrides a base colour. Create Spout / Basin plating fluids exist only for the metals listed in `Metals.COLORS` (fluids must be registered at startup).
+
+## Electricity module (merged from Demanufacture, 2026-10-12)
+Replaces Create: Power Grid (which left the pack). Registers only when Create (zapper) and Create Electro Energetics (light) are loaded.
+- `artifice_cannons:zapper_tool` "Electro-Zapper": 20 000 FE, 500 FE per shot, bolt chains to 2 nearby enemies. The IANA Electro-Zapper gun is crafted from it.
+- `artifice_cannons:factory_light` "Factory Light": an Electro Energetics device (1000 ohm per segment) that projects an invisible light beam on the floor below.
+- Code: `electricity/`. Ported from Power Grid (Apache-2.0, see `THIRD_PARTY.md`).

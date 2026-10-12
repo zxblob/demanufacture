@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "electroenergetics"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "G": {
+      "tag": "c:glass_panes"
+    },
+    "B": {
+      "item": "electroenergetics:bulb"
+    }
+  },
+  "pattern": [
+    "III",
+    "GBG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "artifice_cannons:factory_light"
+  }
+}
